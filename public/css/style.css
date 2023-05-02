@@ -1,0 +1,969 @@
+/*======= RESET CSS =======*/
+
+*,::before,::after{
+	margin:0px;
+	padding:0px;
+}
+
+/*=============== GENERAL ===============*/
+
+*{
+	font-family: 'Raleway', sans-serif;
+}
+
+a:visited{
+	color:black;
+}
+a:link{
+	text-decoration:none;
+	color:black;
+}
+
+a:not(.flex-hebergement a:not(.flex-hebergement a:last-child)):hover{
+	color:#0065FC;
+}
+header,nav{
+	margin-left:50px;
+	margin-right:50px;
+}
+header{
+	max-width: 1440px;
+}
+body{
+	max-width: 1440px;
+}
+
+h1{
+	clear:both;
+	font-size:22px;
+	line-height:1.5em;
+	font-weight: 600;
+}
+h2{
+	font-size:18px;
+	font-weight:600;
+	line-height: 1.5em;
+}
+h3{
+	font-size:16px;
+	font-weight:600;
+	line-height: 1.5em;
+}
+p{	font-size:16px;
+	line-height: 1.5em;
+	font-weight:300;
+}
+span{
+	font-weight:500; /*little price in bold*/
+}
+
+/*=============== HEADER ===============*/
+
+.menu-header{
+	list-style-type:none;
+	font-size:16px;
+	font-weight: normal;
+	margin:0px 12px 0px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.logo{
+	object-fit:contain;
+	height:48px;
+	position:relative;
+	top:-8px;
+}
+.box-booki{
+	height:2em;
+	overflow:hidden;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-left: 15px;
+}
+.li-header{
+ 	line-height: 0;
+}
+
+.li-header>div{
+	height:132px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	width:300px;
+}
+.menu1{
+	display:inline-block;
+	margin-top:3px;
+}
+.menu2{
+	display:inline-block;
+	margin-top:3px;
+}
+
+header li{
+	display:inline-block;
+}
+
+header a{
+	text-decoration:none;
+	color:black;
+	display:inline-block;
+	line-height: 1em;
+	font-size: 16px;
+	padding: 47px 20px 50px 20px;
+}
+
+/*========= HOVER MENU ===========*/
+
+.menu1:hover{
+	border-top:3px solid #0065FC;
+	margin-top:0px;
+}
+.menu2:hover{
+	border-top:3px solid #0065FC;
+	margin-top:0px;
+}
+
+/*=============== RESEARCH BAR ===============*/
+
+nav .info{
+	font-size:16px;
+	line-height: 1.5em;
+	font-weight:300;
+}
+
+.box-research-bar{
+	margin: 20px 0px 10px 0px;
+	display:flex;
+}
+
+/*===============LABEL===============*/
+
+.icon-map{
+	width:18px;
+	height:18px;
+	padding:1em;
+	background-color: #F2F2F2;
+	border-top-left-radius:17px;
+	border-bottom-left-radius:17px;
+}
+
+/*===============INPUT================*/
+
+#research-input{
+	box-sizing:border-box;
+	padding-left:18px;
+	font-size:20px;
+	font-weight:500;
+	border:1px solid #F2F2F2;
+	border-left:none;
+	border-right:none;
+	height:50px;
+	min-width: 110px;
+	max-width: 234.5px;
+}
+
+
+input:focus{
+	outline: 2px solid #d7d7d7;
+	outline-offset:-2px;
+	box-shadow:0px 10px 10px -10px #d7d7d7;
+}
+
+::placeholder{
+	color:black;
+	font-weight:600;
+	font-size: 18px;
+}
+
+/*===============BUTTON===============*/
+
+.research-button{
+	font-size:18px;
+	font-weight:600;
+	width:134px;
+	height:50px;
+	line-height:1em;
+	vertical-align:top;
+	margin: 0px;
+	color:white;
+	border:none;
+	border-top-right-radius:17px;
+	border-bottom-right-radius:17px;
+	background-color: #0065FC;
+}
+button svg{
+	display:none;
+}
+.research-button:active{
+	box-shadow:2px 2px 10px grey;
+}
+
+/*===============NAVIGATION===============*/
+
+.filter-flexbox>*{
+    margin:20px 0px 20px 0px;
+}
+.filter-flexbox>div{
+	margin-right: 25px;
+}
+
+.icon{
+	display:inline-block;
+	background-color: #DEEBFF;
+	border-radius:50%;
+	width:50px;
+	height:50px;
+}
+.filter-flexbox *{
+	display: flex;
+	align-items: center;
+}
+.filter-flexbox .icon{
+	justify-content:space-around;
+}
+#icon-1,#icon-2,#icon-3,#icon-4{
+	height:20px;
+	width:20px;
+}
+.filter-flexbox{
+	max-width:955px;
+	min-height:50px;
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	justify-content:flex-start;
+}
+.filter-flexbox >div:not(.filter-title){
+	border:2px solid #D9D9D9;
+	border-radius:50px;
+	box-sizing: border-box;
+	height:50px;
+	border-left:none;
+
+}
+.filter-flexbox >div:not(.filter-title):hover{
+	box-shadow: 0px 0px 10px #d7d7d7;
+}
+.filter-flexbox >div:not(.filter-title):active{
+	box-shadow: 3px 0px 15px -5px #0065FC;
+	border-color:transparent;
+}
+.text-filter{
+	padding:0px 15px 0px 15px;
+}
+.flex-information{
+	margin-top:19px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-start;
+}
+.box-info-icon{
+	font-size:0px;
+	line-height:1.5rem;
+	height:1.5rem;
+	width:1.5rem;
+	border-radius: 50%;
+	border: 2px solid #F2F2F2;
+	text-align: center;
+	margin-right:20px;
+}
+.info-icon{
+	height:1rem; /* rem à la place de em pour pouvoir mettre un font-size =0px dans la div parent afin de centrer l'image correctement*/
+	vertical-align: middle;
+}
+.box-economique{
+	width: 192px;
+}
+.box-famille{
+	width: 150px;
+}
+.box-romantique{
+	width: 182px;
+}
+.box-animaux{
+	width:240px;
+}
+
+/*===============MAIN===============*/
+
+.container-main{
+	max-width: 1410px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	margin:0px 0px 50px;
+}
+
+.descri p::after{
+	content:"€";
+	font-weight:500;
+}
+
+/*===============HEBERGEMENT===============*/
+
+.descri p{
+	font-size: 14px;
+}
+.hebergement h3{
+	line-height: 1em;
+}
+.hebergement .mark{
+	margin-bottom: 13px;
+}
+.flex-hebergement{
+	display: flex;
+	box-sizing: border-box;
+	max-width: 880px;
+	min-height: 626px;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	margin:39px 25px 0px 25px;
+}
+.flex-hebergement .title-h1{
+	padding-left:46px;
+	padding-bottom:13px;
+	width:100%;
+	padding-top:46px;
+}
+.title-h1 h1 {
+	line-height:1em;
+	justify-content: flex-start;
+}
+
+
+.hebergement{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 246px;
+	height: 199px;
+	background-color: white;
+	box-shadow: 0px 0px 15px #cbcaca;
+	border-radius: 20px;
+	text-align: center;
+	margin:15px;
+}
+.hebergement div:not(.box){
+	margin-left:16px;
+}
+
+.hebergement img{
+	width:240px; /*border 3mm*/
+	height:116px;
+	object-position: 0% 50%;
+	object-fit: cover;
+	border-radius:17px 17px 0px 0px;/*rayon int border*/
+	margin-top:3px;
+	margin-left: 3px;
+}
+
+.starblue3time{
+	position: relative;
+	width:36px;
+	height:12px;
+	background-size:12px 12px;
+background-image:url("../images/icons/star-blue.svg");
+}
+.starblue3time::after{
+	content:"";
+	position: absolute;
+	left:36px;
+	background-image: url("../images/icons/star-grey.svg");
+	background-size: 12px 12px;
+	width:24px;
+	height:12px;
+}
+.starblue4time{
+	position: relative;
+	width:48px;
+	height:12px;
+	background-size:12px 12px;
+	background-image:url("../images/icons/star-blue.svg");
+}
+.starblue4time::after{
+	content:"";
+	position: absolute;
+	left:48px;
+	background-image: url("../images/icons/star-grey.svg");
+	background-size: 12px 12px;
+	width:12px;
+	height:12px;
+}
+.starblue5time{
+	position: relative;
+	width:60px;
+	height:12px;
+	background-size:12px 12px;
+	background-image:url("../images/icons/star-blue.svg");
+}
+
+.title-h2 {
+	width:100%;
+	align-self: flex-end;
+	margin-left:46px;
+	margin-bottom:46px;
+	margin-top:31px;
+}
+.title-h2 h2 {
+	line-height:1em;
+}
+
+/*===============HOVER-HEBERGEMENT===============*/
+
+.box{
+	position:relative;/* pour positionner le hover*/
+}
+.hebergement:hover>.img>img{
+	width:276px;
+	height:230px;
+	border-radius:20px;
+	position:absolute;
+	left:-20px;
+	top:-20px;
+	z-index:1;
+	border:2px solid #0065FC;
+	box-shadow: 0px 0px 25px 2px #525252;
+}
+
+/*===============FLEX-POPULAIRE=============== */
+
+.title-h1{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	width:100%;
+	box-sizing: border-box;
+	padding:0px 37px 0px;
+
+}
+a:nth-child(2)>.populaire img{
+	width:132px;
+	height:138px;
+	object-position: 50% 0%;
+	object-fit: cover;
+	border-radius:17px 0px 0px 17px;
+	margin-top:3px;
+	margin-left: 3px;;
+}
+a:nth-child(3)>.populaire  img{
+	width:132px;
+	height:138px;
+	object-position: 50% 0%;
+	object-fit: cover;
+	border-radius:17px 0px 0px 17px;
+	margin-top:3px;
+	margin-left: 3px;;
+}
+
+a:nth-child(4)>.populaire  img{
+	width:132px; /*border 3mm*/
+	height:138px;
+	object-position: 0% 50%;
+	object-fit: cover;
+	border-radius:17px 0px 0px 17px;/*rayon int border*/
+	margin-top:3px;
+	margin-left: 3px;
+}
+
+.flex-populaire h3{
+	width:144px;
+	padding:17px 0px 5px;
+	line-height: 1.2em;
+	margin-right:50px;
+}
+.starblack{
+	position: relative;
+	width:22px;
+	height:22px;
+	background-size:22px 22px;
+	background-image:url("../images/icons/star-black.svg");
+}
+.flex-populaire{
+	display: flex;
+	flex-direction: column;
+	width:420px;
+	justify-content: flex-start;
+	align-items:center;
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	margin-top:39px;
+}
+
+.populaire{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-content: flex-start;
+	width: 343px;
+	height: 144px;
+	background-color: white;
+	box-shadow: 0px 0px 15px #cbcaca;
+	border-radius: 20px;
+	margin-bottom:34px;
+}
+
+.populaire div:not(.box){
+	margin-left:16px;
+}
+
+.flex-populaire .title-h1{
+	padding-left:37px;
+	padding-top:46px;
+	padding-bottom:26px;
+	align-self: flex-start;
+}
+.populaire .mark{
+	padding-top:40px;
+}
+
+/*===============HOVER-POPULAIRE===============*/
+
+.flex-populaire a:nth-child(4):hover img{
+	width:343px;
+	height:170px;
+	object-position: 0px -250px;
+	border-radius:20px;
+	position:absolute;
+	left:-4px;
+	top:-15px;
+	z-index:1;
+	border:2px solid #0065FC;
+	box-shadow: 0px 0px 25px 2px #525252;
+}
+
+.flex-populaire a:nth-child(2):hover img,.flex-populaire a:nth-child(3):hover img{
+	width:343px;
+	height:170px;
+	object-position: 0px -50px;
+	border-radius:20px;
+	position:absolute;
+	left:-4px;
+	top:-15px;
+	z-index:1;
+	border:2px solid #0065FC;
+	box-shadow: 0px 0px 25px 2px #525252;
+}
+
+/*===============ACTIVITÉ MARSEILLE===============*/
+
+#activite{
+	margin-left: 15px;
+}
+
+.container-main+.title-h1{
+	padding-left: 50px;
+}
+.flexbox-activité h1{
+line-height: 1em;
+padding-bottom:27px;
+}
+.flexbox-card{
+	display:flex;
+	flex-direction:column;
+	flex-wrap: wrap;
+}
+.flexbox-activité{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: flex-start;
+	align-content: space-around;
+	justify-content: center;
+	max-width: 1440px;
+	padding:5px 0px 61px;
+
+}
+.activité{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 302px;
+	box-shadow: 0px 0px 15px #cbcaca;
+	border-radius: 20px;
+	margin:22px 21.5px;
+}
+.activité h3{
+	line-height: 1em;
+	display:inline;
+	vertical-align: center;
+	padding-left:18px;
+}
+.card-activité{
+	height:56px;
+	line-height: 56px;
+}
+
+.img-big{
+	height: 389px;
+	width:302px;
+	overflow: hidden;
+	border-radius:20px 20px 0px 0px;
+}
+#img-big{
+	height:440px;
+	transform: translateX(-180px);
+}
+#img-big2{
+	height:450px;
+	transform: translateX(-190px)translateY(-10px);
+	filter: brightness(135%) contrast(90%) saturate(150%) grayscale(40%)hue-rotate(0deg);}
+.img1{
+	height: 180px;
+
+}
+#img1{
+	height:180px;
+	width:302px;
+	object-fit:cover;
+	object-position: 0% 40%;
+	border-radius:20px 20px 0px 0px;
+}
+.img2{
+	height: 109px;
+}
+#img2{
+	height:109px;
+	width:302px;
+	object-fit:cover;
+	object-position: 0% 15%;
+	border-radius:20px 20px 0px 0px;
+}
+.img3{
+	height: 139px;
+}
+#img3{
+	height:139px;
+	width:302px;
+	object-fit:cover;
+	object-position: 0% 2%;
+	border-radius:20px 20px 0px 0px;
+}
+.img4{
+	height: 152px;
+}
+#img4{
+	height:152px;
+	width:302px;
+	object-fit:cover;
+	object-position: 0% 20%;
+	border-radius:20px 20px 0px 0px;
+}
+
+/*===============FOOTER===============*/
+
+footer{
+	background-color: #F2F2F2;
+	padding:50px 0px 50px 0px;
+
+}
+.box-footer
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0px 50px 0px;
+	max-width: 1021px;
+}
+ul{
+	list-style-type: none;
+	padding-bottom: 50px;
+}
+footer li{
+	line-height: 2em;
+}
+.box-ul-propos{
+	min-width :274px;
+}
+.box-ul-hebergements{
+	min-width:220px;
+}
+
+footer h2{
+	line-height:1em;
+	padding-bottom:15px;
+}
+
+
+/*===============MEDIA QUERY===============*/
+
+@media screen and (max-width:375px) {
+	header{
+		/* reset marges */
+	margin:0px;
+	padding:0px;
+	width:100%;
+
+	}
+
+	/*===============MEDIA MENU===============*/
+	.menu-header{
+		width:100%;
+	}
+
+	header li:nth-child(1){
+		/* placement du logo */
+		display:flex;
+		flex-flow: wrap row;
+		justify-content: center;
+		width:100%;
+	}
+	.li-header{
+		/*margin-bottom: 36px;*/
+		width:100%;
+	}
+
+	.li-header>div{
+		width:100%;
+		height: initial;
+	}
+	.li-header>div>div{
+		/* gestion du container des menus (menu1 et menu2)*/
+		width:50%;
+		border-bottom:3px solid #F2F2F2;
+		border-top:hidden;
+		text-align: center;
+		height:32px;
+	}
+
+	header a{
+		width:100%;
+		heigth:100%;
+		padding:0px;
+		padding-bottom: 19px;
+	}
+
+	/*===============MEDIA NAV===============*/
+
+	nav h1{
+		line-height: 1.25em;
+		margin-bottom:10px;
+	}
+	.box-booki {
+		width: 70px;
+		margin:33px auto 43px auto;
+	}
+	.flex-information{
+		flex-wrap: nowrap;
+		width:initial;
+	}
+	.box-info-icon{
+		box-sizing: border-box;
+		min-width:23px;
+		height:23px;
+		align-self: flex-start;
+		margin-right:7px;
+		line-height: 23px;
+	}
+	.info-icon{
+		height:15px;
+		vertical-align: initial;
+	}
+
+	/*===============MEDIA MAIN===============*/
+
+	.container-main{
+	margin-bottom: 0px;
+}
+
+	.container-main+.title-h1{
+	margin-bottom:0px;
+	padding-left:25px;
+}
+	.title-h1{
+	padding:0px 20px;
+}
+
+
+
+	/*===============MEDIA HOVER MENU ===============*/
+
+	.menu1:hover,.menu2:hover{
+	border-bottom:3px solid #0065FC;
+	border-top:3px solid transparent;
+}
+
+	/*===============MEDIA RESEARCH BAR===============*/
+
+	.box-research-bar{
+	margin-top:35px;
+}
+	.research-button{
+	position: relative;
+	left:-9px;
+	font-size:0px;
+	width:50px;
+	height:50px;
+	border-radius:17px;
+}
+	button svg{
+	display:initial;
+	width:20px;
+	height:20px;
+}
+
+	/*===============MEDIA FILTER===============*/
+
+	nav{
+	margin-left:20px;
+	margin-right:20px;
+}
+	.filter-title{
+	width:100%;
+}
+	.filter-flexbox div{
+	margin-right:0px;
+}
+	.filter-flexbox>div:not(.filter-title){
+	margin:7.5px 0px;
+	width:initial;
+}
+
+	.filter-flexbox{
+	justify-content: space-between;;
+}
+	.icon {
+	width:50px;
+	height:50px;
+}
+	.text-filter{
+	padding: 0px 10px;
+}
+
+	/*===============MEDIA POPULAIRE===============*/
+
+	.flex-populaire{
+	width:100%;
+	order:-1;
+	height: 580px;
+}
+	.flex-populaire .title-h1{
+	padding-left:20px;
+	padding-right:20px;
+	width:100%;
+}
+	.populaire{
+	margin:0px auto 10px auto;
+}
+
+	/*===============MEDIA HEBERGEMENT===============*/
+
+	.flex-hebergement{
+	order:0;
+	background-color: initial;
+	margin-top:0px;
+}
+
+	.flex-hebergement .title-h1{
+	width:100%;
+	padding:35px 0px 20px;
+	margin-left:0px;
+	margin-right: 0px;
+}
+	#hebergement{
+	padding-left:7.5px;
+	width:100%;
+}
+	.title-h2{
+	margin-left:15px;
+}
+	.hebergement{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 333px;
+	height: 199px;
+	background-color: white;
+	box-shadow: 2px 2px 10px -2px rgb(173, 173, 173);
+	border-radius: 20px;
+	text-align: center;
+	margin:7.5px;
+}
+	.hebergement div:not(.box){
+	margin-left:16px;
+}
+	.hebergement img{
+	width:327px; /*border 3mm*/
+	height:116px;
+	object-position: 0% 50%;
+	object-fit: cover;
+	border-radius:17px 17px 0px 0px;/*rayon int border*/
+	margin-top:3px;
+	margin-left: 3px;
+}
+
+	/*===============MEDIA HOVER HEBERGEMENT===============*/
+
+	.hebergement:hover>.img>img{
+	width:333px;
+	height:199px;
+	border-radius:20px;
+	position:absolute;
+	left:-3px;
+	top:-3px;
+	z-index:1;
+	border:2px solid #0065FC;
+	box-shadow: 2px 2px 10px -2px rgb(173, 173, 173);
+}
+
+	/*===============MEDIA ACTIVITE===============*/
+
+	#activite{
+	margin-bottom:32px;
+		margin-left:0px;
+}
+
+	.flexbox-activité{
+	padding-bottom: 49px;
+}
+
+	.activité{
+	width: 334px;
+	height:190px;
+	box-shadow: 2px 2px 10px -2px rgb(173, 173, 173);
+	margin:7.5px;
+}
+
+	.activité .box{
+	width:334px;
+	height:134px;
+}
+	.activité .box img{
+	width:334px!important;
+	height:134px!important;
+}
+
+	.img-big img{
+	object-fit: cover!important;
+	transform: initial!important;
+}
+	/*===============MEDIA HOVER ACTIVITÉ===============*/
+
+	.activité:hover >.box{
+		overflow: visible;
+	}
+
+	.activité:hover >.box>img{
+		height:190px!important;
+		object-fit: initial;
+		border-radius:20px!important;
+		border:2px solid #0065FC;
+		box-sizing: border-box;
+	}
+
+	.activités>.flexbox-activité a:hover {
+		color: black !important;
+	}
+}
+
